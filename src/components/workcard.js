@@ -1,20 +1,10 @@
-import swiggy_img from '../assets/swiggy1.svg';
+import threads from '../assets/threads.svg';
 import obvious_img from '../assets/Obvious.svg';
 import purple_rect from '../assets/purple-rect1.svg';
 import behance from '../assets/behance.svg';
 import { Container, Row, Col} from "react-bootstrap";
-// import 'animate.css';
-import TrackVisibility from 'react-on-screen';
 
 export const Workcard = () => {
-
-    // const projects = [
-    //     {
-    //         title: "Swiggy Case Study",
-    //         description: "Revamped the swiggy UI design to introduce a new feature based on UX research.",
-    //         tag: "Case-Study", 
-    //     }
-    // ];
 
     return (
         <section className="work" id="work">
@@ -57,16 +47,17 @@ export const Workcard = () => {
                                 <a href="https://www.w3schools.com/cssref/tryit.php?filename=trycss_sel_link_more2" target="_blank" rel="noreferrer">
                                     <div className='swiggy-outer'>
                                         <div className='hover-rect'></div>
-                                        <div className='swiggy-img'><img src={swiggy_img} id="swiggyimg" alt="tools" /></div>
+                                    <div className='swiggy-img'><img src={threads} id="threads" alt="tools" /></div>
+
                                     </div>
                                 </a>
                                 <div className='info-outerlayout'>
                                     <div className='info-layout'>
                                         <div className='name-descript'>
-                                            <div className='project-name'>Improvised Swiggy</div>
-                                            <div className='project-descript'><span id="descript">Revamped the swiggy UI design to introduce a new feature based on UX research.</span></div>
+                                            <div className='project-name'>Threads Teardown</div>
+                                            <div className='project-descript'><span id="descript">To increase the number of Threads on Threads App launched by Instagram.</span></div>
                                         </div>
-                                        <div className='project-tag'><span id="tag">Case-Study</span></div>
+                                        <div className='project-tag'><span id="tag">DD Project</span></div>
                                     </div>
                                 </div>
                             </div>

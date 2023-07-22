@@ -1,7 +1,4 @@
 import { Container } from 'react-bootstrap';
-import lkdin from '../assets/Lkdin.svg';
-import behance from '../assets/behance_wt1.svg';
-
 export const Footer = () => {
     return(
         <footer className="footer" id="footer">

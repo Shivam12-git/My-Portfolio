@@ -1,5 +1,5 @@
 import { Container, Row, Col} from "react-bootstrap"
-import { useState, useEffect } from "react";
+import { useState, useEffect,useCallback,useMemo } from "react";
 import hdr_img from '../assets/hdr-img.svg';
 import dwnld from '../assets/download-icon.svg';
 
@@ -7,45 +7,45 @@ export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
     const [text, setText] = useState('');
-    const toRotate = ["MANAGER","DESIGNER"];
-    const [index,setIndex] = useState(1);
-    const [delta,setDelta] = useState(300 - Math.random()*100);
+    // const [index,setIndex] = useState(1);
+    const [delta,setDelta] = useState(300 - Math.random() * 100);
+    const toRotate = useMemo(() => ["MANAGER", "DESIGNER"], []);
     const period = 2000;
 
+    const tick = useCallback(() => {
+        let i = loopNum % toRotate.length;
+        let fullText = toRotate[i];
+        let updatedText = isDeleting
+          ? fullText.substring(0, text.length - 1)
+          : fullText.substring(0, text.length + 1);
+    
+        setText(updatedText);
+    
+        if (isDeleting) {
+          setDelta((prevDelta) => prevDelta / 2);
+        }
+    
+        if (!isDeleting && updatedText === fullText) {
+          setIsDeleting(true);
+        //   setIndex((prevIndex) => prevIndex - 1);
+          setDelta(period);
+        } else if (isDeleting && updatedText === '') {
+          setIsDeleting(false);
+          setLoopNum((prevLoopNum) => prevLoopNum + 1);
+        //   setIndex(1);
+          setDelta(500);
+        } else {
+        //   setIndex((prevIndex) => prevIndex + 1);
+        }
+      }, [isDeleting, loopNum, text, toRotate]);
+    
     useEffect(() => {
         let ticker =  setInterval(() => {
             tick();
         },delta);
 
         return () => { clearInterval(ticker) };
-    }, [text])
-
-    const tick = () => {
-        let i = loopNum % toRotate.length;
-        let fullText = toRotate[i];
-        let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1);
-
-        setText(updatedText);
-
-        if(isDeleting){
-            setDelta(prevDelta => prevDelta / 2)
-        }
-
-        if (!isDeleting && updatedText === fullText) {
-            setIsDeleting(true);
-            setIndex(prevIndex => prevIndex - 1);
-            setDelta(period);
-        }
-        else if (isDeleting && updatedText === ''){
-            setIsDeleting(false);
-            setLoopNum(loopNum + 1);
-            setIndex(1);
-            setDelta(500);
-        }
-        else {
-            setIndex(prevIndex => prevIndex + 1);
-          }
-    }
+    }, [tick, delta]);
 
     return (
         <section className="home" id="home">
@@ -62,7 +62,7 @@ export const Banner = () => {
                                 <span id = "tagline">Bringing simplicity and elegance to complex problems is my approach to Product Design.</span>
                             </div>
                         </div>
-                        <a className="button" href="https://drive.google.com/file/d/148QUyZyP_20LqBBFiYXgIjH4fop08_xc/view?usp=sharing" target="_blank">
+                        <a className="button" href="https://drive.google.com/file/d/148QUyZyP_20LqBBFiYXgIjH4fop08_xc/view?usp=sharing" target="_blank" rel="noreferrer">
                             <div className="button-layout">
                             <div className="dwnld-icon"><img src={dwnld} alt="Hdr" /></div>
                             <div id="resume-button">My Resume</div>

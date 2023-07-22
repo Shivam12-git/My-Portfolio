@@ -1,5 +1,5 @@
 import { Container } from 'react-bootstrap';
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import plane from '../assets/plane.gif'; // Make sure to import the plane image
 import journey from '../assets/wholejourney.svg'; // Make sure to import the journey image
 

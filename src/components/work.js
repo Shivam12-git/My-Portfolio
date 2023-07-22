@@ -1,11 +1,7 @@
-import swiggy_img from '../assets/swiggy1.svg';
-import purple_rect from '../assets/purple-rect.svg';
-import behance from '../assets/behance.svg';
 import { Container, Row, Col} from "react-bootstrap";
 import { Workcard } from "./workcard"
 import { Workcard2 } from "./workcard2"
 // import 'animate.css';
-import TrackVisibility from 'react-on-screen';
 
 export const Work = () => {
 
