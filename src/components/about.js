@@ -1,5 +1,5 @@
 import { Container, Row, Col} from "react-bootstrap";
-import about_img from '../assets/about-img-1.svg';
+import about_img from '../assets/about-img.svg';
 import tools from '../assets/tools.svg';
 export const About = () => {
      return(

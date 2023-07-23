@@ -42,13 +42,21 @@ z-index: 9999;
 transition: 0.32 ease-in-out;
 background: rgba(0, 0, 0, 0.5);
 backdrop-filter: blur(35px);
+/* justify-content: flex-start; */
+display: inline-flex;
+/* padding: 36px 99px 18px 48px; */
+align-items: flex-end;
 }
 nav.navbar.scrolled{
     position: fixed;
     top: 0;
   }
-  .me-auto{
-  align-items: center;
+
+.me-auto{
+  /* align-items: center; */
+display: flex;
+justify-content: space-between;
+align-items: center;
 }
 
 #name-logo{
@@ -67,10 +75,8 @@ padding: 8px;
 gap: 96px;
 
 position: absolute;
-width: 322px;
-height: 46px;
-left: 800px;
-top: 36px;
+right: 96px;
+top: 42px;
 
 color: #fff;
 cursor: pointer;
@@ -145,7 +151,51 @@ span.navbar-text {
   left: 858.5px;
   top: 36px;
 }
+@media screen and (max-width: 500px) {
 
+  .right-nav {
+    flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 8px;
+  position: static;
+}
+
+.me-auto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#name-logo {
+  position: static;
+  margin-bottom: 16px;
+}
+
+.navbar .navbar-collapse {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar .navbar-toggler[aria-expanded="true"] + .right-nav,
+.navbar .navbar-toggler[aria-expanded="false"] {
+  display: flex;
+}
+
+.me-auto{
+  /* z-index: 9999; */
+  width: 132px;
+  height: 200px;
+  border-radius: 6px;
+  background-color: #000; /* Set the desired background color */
+
+}
+nav.navbar {
+  z-index: 9999;
+}
+}
 
 /* =========Banner======== */
 
@@ -698,22 +748,27 @@ gap: 28px;
 
 #whole{
   width: 3400px;
-  /* height: 100%; */
 }
 
 .journey3 {
+
   overflow: scroll;
   margin-top: 120px;
   margin-left: -160px;
   margin-bottom: 0px;
  /* Prevent content from wrapping */
-  position: relative; /* Required for absolute positioning of the plane */
+  /* position: relative; */
 }
-
+.journey-travel{
+}
 .journey-final3 {
+  /* overflow: scroll; */
+  align-items: center;
+  justify-content: center;
   display: inline-block; /* Make the content inline to avoid line breaks */
   position: relative; /* Required for absolute positioning of the plane */
 }
+
 .plane1 {
   position: absolute;
   top: -130px;
@@ -725,20 +780,20 @@ gap: 28px;
   top: -110px;
   transform: scaleY(-1);
   left: 630px; /* Adjust to center the plane perfectly */
-  z-index: -2; /* Ensure the plane is above the journey image */
+  z-index: -3; /* Ensure the plane is above the journey image */
 }
 .plane3 {
   position: absolute;
   top: -140px;
   left: 1372px; /* Adjust to center the plane perfectly */
-  z-index: -2; /* Ensure the plane is above the journey image */
+  z-index: -4; /* Ensure the plane is above the journey image */
 }
 .plane4 {
   position: absolute;
   top: -110px;
   transform: scaleY(-1);
   left: 2090px; /* Adjust to center the plane perfectly */
-  z-index: -2; /* Ensure the plane is above the journey image */
+  z-index: -5; /* Ensure the plane is above the journey image */
 }
 #plain1{
   /* position: absolute; */
@@ -751,7 +806,8 @@ gap: 28px;
 
 .whole-journey3 {
   width: 100%;
-  overflow: auto;
+  overflow-x: scroll;
+  overflow-y: hidden;
   position: relative;
   padding-right: 60px;
 }
@@ -925,7 +981,7 @@ img {
 
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
-/* @media screen and (max-width: 992px) {
+@media screen and (max-width: 992px) {
   .container {
     margin-left: var(--mb-1-5);
     margin-right: var(--mb-1-5);
@@ -939,10 +995,10 @@ img {
     width: 22px;
     height: 22px;
   }
-} */
+}
 
 /* For medium devices */
-/* @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   body {
     margin: 0 0 var(--header-height) 0;
   }
@@ -957,10 +1013,10 @@ img {
 }
 
 @media screen and (max-width: 576px) {
-} */
+}
 
 /* For small devices */
-/* @media screen and (max-width: 350px) {
+@media screen and (max-width: 350px) {
   :root {
     --big-font-size: 2.25rem;
   }
@@ -969,7 +1025,7 @@ img {
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
   }
-} */
+}
 
 /* BY-DEFAULT */
 

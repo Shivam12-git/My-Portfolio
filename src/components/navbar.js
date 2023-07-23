@@ -1,4 +1,4 @@
-import { Navbar,Container,Nav } from "react-bootstrap";
+  import { Navbar,Container,Nav } from "react-bootstrap";
 import React from 'react';
 import { useState,useEffect } from "react";
 import logo from '../assets/name_logo.svg';
@@ -32,18 +32,17 @@ export const NavBar = () => {
     return (
         <BrowserRouter>
           <div>
-
             <Navbar expand="lg" className={scrolled ? "scrolled": ""}>  
             <Container>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />  
               <Navbar.Collapse id="basic-navbar-nav">  
                 <Nav className="me-auto">
-                  <Nav.Link as={Link} to={"/"} activeStyle id="name-logo" href="#home" className = {activeLink === 'home' ? 'active navbar-link-noline' : 'navbar-link-noline'} onClick={() => onUpdateActiveLink('home')}><img src={logo} alt="logo"/></Nav.Link>
-                  <Container className = "right-nav">
+                  <Nav.Link as={Link} to={"/"} activeStyle id="name-logo" href="#home" className = {activeLink === 'home' ? 'active navbar-link-noline' : 'navbar-link-noline'} onClick={() => onUpdateActiveLink('home')}><img src={logo} alt="logo" /></Nav.Link>
+                  <div className = "right-nav">
                   <Nav.Link as={Link} to={"/work"} className = {activeLink === 'work' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('work')}>Work</Nav.Link>  
                   <Nav.Link as={Link} to={"/journey"} className = {activeLink === 'journey' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('journey')}>Journey</Nav.Link>    
                     <Nav.Link as={Link} to={"/about"} className = {activeLink === 'about' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('about')}>About</Nav.Link>    
-                  </Container>    
+                  </div>    
                 </Nav>  
               </Navbar.Collapse>  
             </Container>  
