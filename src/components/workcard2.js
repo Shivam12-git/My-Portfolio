@@ -27,8 +27,8 @@ export const Workcard2 = () => {
                                 <div className='info-outerlayout'>
                                     <div className='info-layout'>
                                         <div className='name-descript'>
-                                            <div className='project-name'>Genny</div>
-                                            <div className='project-descript'><span id="descript">The Fashion Super App that digitize your wardrobe with elegance.</span></div>
+                                            <div className='project-name'>Genny - The Fashion Super-App</div>
+                                            <div className='project-descript'><span id="descript">A one stop solution to digitize your wardrobe with elegance.</span></div>
                                         </div>
                                         <div className='project-tag'><span id="tag">Product-Design</span></div>
                                     </div>
