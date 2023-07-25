@@ -1,4 +1,5 @@
 import swiggy_img from '../assets/swiggy1.svg';
+import genny_img from '../assets/genny.svg';
 import purple_rect from '../assets/purple-rect1.svg';
 import behance from '../assets/behance.svg';
 import { Container, Row, Col} from "react-bootstrap";
@@ -20,16 +21,16 @@ export const Workcard2 = () => {
                                 <a href="https://www.w3schools.com/cssref/tryit.php?filename=trycss_sel_link_more2" target="_blank" rel="noreferrer">
                                 <div className='swiggy-outer'>
                                     <div className='hover-rect'></div>
-                                    <div className='swiggy-img'><img src={swiggy_img} id="swiggyimg" alt="tools" /></div>
+                                    <div className='genny-img'><img src={genny_img} id="genny-img" alt="tools" /></div>
                                 </div>
                                 </a>
                                 <div className='info-outerlayout'>
                                     <div className='info-layout'>
                                         <div className='name-descript'>
                                             <div className='project-name'>Genny</div>
-                                            <div className='project-descript'><span id="descript">Revamped the swiggy UI design to introduce a new feature based on UX research.</span></div>
+                                            <div className='project-descript'><span id="descript">The Fashion Super App that digitize your wardrobe with elegance.</span></div>
                                         </div>
-                                        <div className='project-tag'><span id="tag">Personal Project</span></div>
+                                        <div className='project-tag'><span id="tag">Product-Design</span></div>
                                     </div>
                                 </div>
                             </div>

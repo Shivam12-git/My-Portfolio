@@ -430,6 +430,15 @@ border: 0.971px solid var(--primary-purple, #3E065F);
   margin-top: -75px;
   margin-left: -35px;
 }
+.genny-img{
+  background-color: #000;
+overflow-x: hidden;
+border: 0.971px solid var(--primary-purple, #3E065F);
+}
+#genny-img{
+  margin-top: -40px;
+  margin-left: -25px;
+}
 #threads{
   /* height: 480px; */
   margin-top: -40px;
