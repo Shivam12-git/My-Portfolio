@@ -17,7 +17,7 @@ export const Workcard = () => {
                                             <div className='grad-rect'><img src={purple_rect} id="purplerect" alt="tools" /></div>
                                     </div>
                             <div className = "project-card-inner">
-                                <a href="https://drive.google.com/file/d/1c-IQwhet5aXCXXpQArAQCo8rS9s41mSp/view?usp=sharing" target="_blank" rel="noreferrer">
+                                <a href="https://drive.google.com/file/d/1bM0dUZ71FPpDVkT7Rn_uoqnAiZE6mfi_/view?usp=sharing" target="_blank" rel="noreferrer">
                                 <div className='obv-outer'>
                                     <div className='hover-rect'></div>
                                     <div className='obv-img'><img src={obvious_img} id="obv-img" alt="tools" /></div>
@@ -44,7 +44,7 @@ export const Workcard = () => {
                                             <div className='grad-rect'><img src={purple_rect} id="purplerect" alt="tools" /></div>
                                     </div>
                             <div className = "project-card-inner">
-                                <a href="https://www.w3schools.com/cssref/tryit.php?filename=trycss_sel_link_more2" target="_blank" rel="noreferrer">
+                                <a href="https://drive.google.com/file/d/11TATW6R9mPFhLmVjN6Tn0eIM-DpWIE-D/view?usp=sharing" target="_blank" rel="noreferrer">
                                     <div className='swiggy-outer'>
                                         <div className='hover-rect'></div>
                                     <div className='swiggy-img'><img src={threads} id="threads" alt="tools" /></div>
