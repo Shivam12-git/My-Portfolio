@@ -62,7 +62,7 @@ export const Banner = () => {
                                 <span id = "tagline">Bringing simplicity and elegance to complex problems is my approach to Product Design.</span>
                             </div>
                         </div>
-                        <a className="button" href="https://drive.google.com/file/d/148QUyZyP_20LqBBFiYXgIjH4fop08_xc/view?usp=sharing" target="_blank" rel="noreferrer">
+                        <a className="button" href="https://drive.google.com/file/d/1lto13aJfM5lpR09Yab2_G0vCv5W_TcQM/view?usp=sharing" target="_blank" rel="noreferrer">
                             <div className="button-layout">
                             <div className="dwnld-icon"><img src={dwnld} alt="Hdr" /></div>
                             <div id="resume-button">My Resume</div>
