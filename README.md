@@ -1,2 +1,3 @@
-# My-Portfolio
-This is my portfolio website that I have designed in Figma and developed using React App.
+# Welcome to my Captivating Portfolio!
+
+Step into a world of creative brilliance and technical expertise. This vibrant portfolio website showcases the work of a visionary UI/UX designer and developer, meticulously crafted in Figma and skillfully brought to life with React App.
