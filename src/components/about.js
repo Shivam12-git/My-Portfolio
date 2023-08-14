@@ -18,7 +18,7 @@ export const About = () => {
                         <div className="about-info">
                             <span id = "about-education">📚 Currently majoring in the field of computer science at <span id="college-name">Indian Institute of Technology (IIT) Mandi</span>, set to graduate in 2024 with a B.Tech degree.</span>
                             <span id = "about-profile-1">🎨 A self-taught <span id="profile-1">Product Designer</span> with a strong passion for creating intuitive and visually appealing digital experiences.</span>
-                            <span id="about-profile-2">📶 Also a beginner <span id="profile-2">Product Manager</span> who is eager to learn and apply the principles of product management that I have learned from <span id="doremon">Doremon Den</span>.</span>
+                            <span id="about-profile-2">📶 Also an amateur <span id="profile-2">Product Manager</span> who is eager to learn and apply the principles of product management that I have learned from <a href = "https://www.linkedin.com/company/doremon-den/" target="_blank" rel="noreferrer"><span id="doremon">Doremon Den</span></a>.</span>
                         </div>
                     </div>
                     <div className="tools">
