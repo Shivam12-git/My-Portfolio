@@ -2,4 +2,4 @@
 
 Step into a world of creative brilliance and technical expertise. This vibrant portfolio website showcases the work of a visionary UI/UX designer and developer, meticulously crafted in Figma and skillfully brought to life with React App.
 
-Discover at - [Shivam's Portfolio]((https://shivam-productverse.onrender.com/)https://shivam-productverse.onrender.com/)
+Discover at - [Shivam's Portfolio](https://shivam-productverse.onrender.com/)
