@@ -9,7 +9,7 @@ export const Banner = () => {
     const [text, setText] = useState('');
     // const [index,setIndex] = useState(1);
     const [delta,setDelta] = useState(300 - Math.random() * 100);
-    const toRotate = useMemo(() => ["MANAGER", "DESIGNER"], []);
+    const toRotate = useMemo(() => ["MANAGER", "DESIGNER", "ANALYST"], []);
     const period = 2000;
 
     const tick = useCallback(() => {
@@ -62,7 +62,7 @@ export const Banner = () => {
                                 <span id = "tagline">Bringing simplicity and elegance to complex problems is my approach to Product Design.</span>
                             </div>
                         </div>
-                        <a className="button" href="https://drive.google.com/file/d/1lto13aJfM5lpR09Yab2_G0vCv5W_TcQM/view?usp=sharing" target="_blank" rel="noreferrer">
+                        <a className="button" href="https://drive.google.com/file/d/1QABFvgSJHmTo4woRZonbj7Sg-qEb_-5V/view?usp=sharing" target="_blank" rel="noreferrer">
                             <div className="button-layout">
                             <div className="dwnld-icon"><img src={dwnld} alt="Hdr" /></div>
                             <div id="resume-button">My Resume</div>

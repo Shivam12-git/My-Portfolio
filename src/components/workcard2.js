@@ -18,7 +18,7 @@ export const Workcard2 = () => {
                                             <div className='grad-rect'><img src={purple_rect} id="purplerect" alt="tools" /></div>
                                     </div>
                             <div className = "project-card-inner">
-                                <a href="https://drive.google.com/file/d/1y_QrHwejGr2_oQK_KgFbKz0Ms27lQ11f/view?usp=sharing" target="_blank" rel="noreferrer">
+                                <a href="https://www.behance.net/gallery/179608745/Genny-The-Fashion-Super-App" target="_blank" rel="noreferrer">
                                 <div className='swiggy-outer'>
                                     <div className='hover-rect'></div>
                                     <div className='genny-img'><img src={genny_img} id="genny-img" alt="tools" /></div>
@@ -45,7 +45,7 @@ export const Workcard2 = () => {
                                             <div className='grad-rect'><img src={purple_rect} id="purplerect" alt="tools" /></div>
                                     </div>
                             <div className = "project-card-inner">
-                                <a href="https://drive.google.com/file/d/1nFRElakMPnvZ-V1a3_oixSM0nhlWExjV/view?usp=sharing" target="_blank" rel="noreferrer">
+                                <a href="https://www.behance.net/gallery/163822659/Improved-Swiggy" target="_blank" rel="noreferrer">
                                     <div className='swiggy-outer'>
                                         <div className='hover-rect'></div>
                                         <div className='swiggy-img'><img src={swiggy_img} id="swiggyimg" alt="tools" /></div>
