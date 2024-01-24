@@ -977,7 +977,7 @@ img {
   }
 }
 
-@media screen and (min-width: 400px) and (max-width: 576px) {
+@media screen and (min-width: 400px) and (max-width: 768px) {
 
   .section {
     padding: 2rem 0 4rem;
@@ -986,7 +986,7 @@ img {
   .first-col{
     margin-left: 0%;
   }
-    .container {
+  .container {
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
   }
@@ -1002,7 +1002,7 @@ img {
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
   }
-} */
+}
 
 /* @media screen and (max-width: 500px) {
 
