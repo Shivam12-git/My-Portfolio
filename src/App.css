@@ -1,7 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo:wght@100;200;300;400;500;600;700;800&family=Kalam:wght@300;400;700&display=swap');
 
 /*=============== VARIABLES CSS ===============*/
-
+:root{
+  --big-font-size: 85px;
+  --h1-font-size: 56px;
+  --h2-font-size: 36px;
+  --h3-font-size: 28px;
+  --normal-font-size: 20px;
+  --small-font-size: 22px;
+  --smaller-font-size: 0.813rem;
+  --tiny-font-size: 0.625rem; 
+}
 * {
   margin: 0;
   padding: 0;
@@ -180,7 +189,7 @@ height: 84px; */
 font-family: 'Exo';
 font-style: normal;
 font-weight: 400;
-font-size: 28px;
+font-size: var(--h3-font-size);
 line-height: 42px;
 /* or 140% */
 
@@ -216,7 +225,7 @@ color: #FFFFFF;
 font-family: 'Exo';
 font-style: normal;
 font-weight: 400;
-font-size: 20px;
+font-size: var(--normal-font-size);
 line-height: 30px;
 /* identical to box height, or 125% */
 
@@ -270,8 +279,8 @@ gap: 24px;
   font-family: 'Exo';
   font-style: normal;
   font-weight: 700;
-  font-size: 56px;
-  line-height: 85px;
+  font-size: var(--h1-font-size);
+  line-height: var(--big-font-size);
 }
 
 .innermost-text{
@@ -381,6 +390,11 @@ gap: 72px;
 overflow-x: hidden;
 border: 0.971px solid var(--primary-purple, #3E065F);
 }
+.threads-img{
+  background-color: #fff;
+overflow-x: hidden;
+border: 0.971px solid var(--primary-purple, #3E065F);
+}
 .obv-img{
   background-color: #fff;
 overflow-x: hidden;
@@ -405,16 +419,18 @@ border: 0.971px solid var(--primary-purple, #3E065F);
   margin-left: -35px;
 }
 .obv-outer{
-  /* display: flex;
-  justify-content: flex-end;
-  align-items: center; */
+  width: 500px;
+  height: 360px;
+}
+.threads-outer{
+  width: 500px;
+  height: 360px;
+}
+.genny-outer{
   width: 500px;
   height: 360px;
 }
 .swiggy-outer{
-  /* display: flex;
-  justify-content: flex-end;
-  align-items: center; */
   width: 500px;
   height: 360px;
 }
@@ -446,7 +462,7 @@ overflow-x: hidden;
   height: 62px;
   justify-content: space-between;
   align-items: center;
-flex-shrink: 0;
+  flex-shrink: 0;
 }
 
 .info-outerlayout{
@@ -475,6 +491,7 @@ transition: 0.1s ease-in;
   display: flex;
   padding: 6px 14px;
   align-items: flex-start;
+  justify-content: center;
   gap: 4.263px;
   border: 0.533px solid var(--light, #8E05C2);
   background: #100C12;
@@ -639,7 +656,7 @@ gap: 28px;
 .footer-hdline{
   color: #FFF;
   text-align: center;
-font-size: 36px;
+font-size: var(--h2-font-size);
 font-family: Exo;
 font-style: normal;
 font-weight: 500;
@@ -647,8 +664,8 @@ line-height: normal;
 letter-spacing: 0.32px;
 }
 .footer-text{
-  text-align: center;
-font-size: 22px;
+text-align: center;
+font-size: var(--small-font-size);
 font-family: Exo;
 font-style: normal;
 font-weight: 300;
@@ -785,14 +802,7 @@ gap: 28px;
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
   /* .5rem = 8px | 1rem = 16px ... */
-  /* --big-font-size: 3.5rem;
-  --h1-font-size: 2.25rem;
-  --h2-font-size: 1.5rem;
-  --h3-font-size: 1.25rem;
-  --normal-font-size: 1rem;
-  --small-font-size: 0.875rem;
-  --smaller-font-size: 0.813rem;
-  --tiny-font-size: 0.625rem; */ 
+
 
   /*========== Font and typography ==========*/
   /* --body-font: "Exo", sans-serif;
@@ -977,7 +987,7 @@ img {
   }
 }
 
-@media screen and (min-width: 400px) and (max-width: 768px) {
+@media screen and (min-width: 576px) and (max-width: 768px) {
 
   .section {
     padding: 2rem 0 4rem;
@@ -992,16 +1002,149 @@ img {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 576px) {
   :root {
-    --big-font-size: 2.25rem;
+    --big-font-size: 68px;
+    --h1-font-size: 48px;
+    --h2-font-size: 28px;
+    --h3-font-size: 22px;
+    --small-font-size: 18px;
+    --normal-font-size: 18px;
   }
-
+  #hdr-img{
+    transform: scale(0.8);
+    margin-left: -60px;
+  }
+  .footertxt-layout{
+    width: 300px;
+  }
+  .lkdin{
+    width: 50px;
+    height: 50px;
+  }
+  .behance-white{
+    width: 50px;
+    height: 50px;
+  }
+  .rect-highlight{
+  width: 64px;
+  height: 12px;
+  left: 134px;
+  bottom: 34px;
+  }
+  .project-rows{
+    gap: 60px;
+  }
+  .obv-outer{
+    width: 300px;
+    height: 350px;
+  }
+  .obv-img{
+    height: 420px;
+  }
+  .threads-outer{
+    width: 300px;
+    height: 350px;
+  }
+  .genny-outer{
+    width: 300px;
+    height: 350px;
+  }
+  #threads{
+    height: 420px;
+  }
+  .genny-img{
+    height: 420px;
+  }
+  .swiggy-img{
+    height: 420px;
+  }
+  .project-tag{
+    width: 100px;
+  }
+  .swiggy-outer{
+    width: 300px;
+    height: 350px;
+  }
+  .sec-col{
+    padding-top: 18%;
+  }
+  .inner{
+    margin:-10px 0px 0px 10px;
+    width: 300px;
+    height: 400px;
+  }
+  .project-card .info-layout{
+    width: 270px;
+    display: flex;
+    height: 40px;
+  }
+  .project-card-inner{
+    display: inline-flex;
+    gap: 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-shrink: 0;
+  }
+  .info-outerlayout{
+    width: 300px;
+    padding: 24px 20px 16px 16px;
+  }
+  .behance{
+    top: 14px;
+    left: 240px;
+  }
+  .project-card .project-descript {
+    display: none;
+    visibility: hidden;
+  }
+  .button-layout{
+    padding: 12px 28px;
+  }
+  .project-card .project-name{
+    padding-top: 0px;
+  }
   .container {
     max-width: 350px;
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
   }
+  .right-nav {
+    flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 8px;
+  position: static;
+}
+
+.me-auto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#name-logo {
+  position: static;
+  margin-bottom: 16px;
+}
+
+.navbar .navbar-collapse {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.navbar .navbar-toggler[aria-expanded="true"] + .right-nav,
+.navbar .navbar-toggler[aria-expanded="false"] {
+  display: flex;
+}
+
+.me-auto{
+  width: 180px;
+  height: 200px;
+  border-radius: 4px;
+  background-color: #1f1f1f; 
+}
 }
 
 /* @media screen and (max-width: 500px) {

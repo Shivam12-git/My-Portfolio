@@ -5,7 +5,6 @@ import purple_rect from '../assets/purple-rect1.svg';
 import behance from '../assets/behance.svg';
 import swiggy_img from '../assets/swiggy1.svg';
 import genny_img from '../assets/genny.svg';
-// import 'animate.css';
 
 export const Work = () => {
 
@@ -39,7 +38,6 @@ export const Work = () => {
                         <div className='behance'><img src={behance} alt="tools" /></div>
                     </div>
                     </Col>
-                    {/* <Col xl={1} lg={12}></Col> */}
                     <Col className="sec-col" lg={{ span: 5, offset: 1 }} md={{ span: 6, offset: 1 }} xl={5}>
                     <div className='projectcard-outer'>
                         <div className = "project-card">
@@ -48,9 +46,9 @@ export const Work = () => {
                                     </div>
                             <div className = "project-card-inner">
                                 <a href="https://www.behance.net/gallery/179312767/Threads-Teardown-Doremon-Den-Project" target="_blank" rel="noreferrer">
-                                    <div className='swiggy-outer'>
+                                    <div className='threads-outer'>
                                         <div className='hover-rect'></div>
-                                    <div className='swiggy-img'><img src={threads} id="threads" alt="tools" /></div>
+                                    <div className='threads-img'><img src={threads} id="threads" alt="tools" /></div>
 
                                     </div>
                                 </a>
@@ -78,7 +76,7 @@ export const Work = () => {
                                     </div>
                             <div className = "project-card-inner">
                                 <a href="https://www.behance.net/gallery/179608745/Genny-The-Fashion-Super-App" target="_blank" rel="noreferrer">
-                                <div className='swiggy-outer'>
+                                <div className='genny-outer'>
                                     <div className='hover-rect'></div>
                                     <div className='genny-img'><img src={genny_img} id="genny-img" alt="tools" /></div>
                                 </div>

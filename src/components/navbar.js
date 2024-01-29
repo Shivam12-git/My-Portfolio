@@ -32,10 +32,10 @@ export const NavBar = () => {
     return (
         <BrowserRouter>
           <div>
-            <Navbar expand="lg" className={scrolled ? "scrolled": ""}>  
+            <Navbar collapseOnSelect expand="md" className={scrolled ? "scrolled": ""}>  
             <Container>
-              <Navbar.Toggle aria-controls="basic-navbar-nav" />  
-              <Navbar.Collapse id="basic-navbar-nav">  
+              <Navbar.Toggle aria-controls="responsive-navbar-nav" />  
+              <Navbar.Collapse id="responsive-navbar-nav">  
                 <Nav className="me-auto">
                   <Nav.Link as={Link} to={"/"} activeStyle id="name-logo" href="#home" className = {activeLink === 'home' ? 'active navbar-link-noline' : 'navbar-link-noline'} onClick={() => onUpdateActiveLink('home')}><img src={logo} alt="logo" /></Nav.Link>
                   <div className = "right-nav">
