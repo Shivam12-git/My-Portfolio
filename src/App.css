@@ -8,7 +8,7 @@
   --h3-font-size: 28px;
   --normal-font-size: 20px;
   --small-font-size: 22px;
-  --smaller-font-size: 0.813rem;
+  --smaller-font-size: 24px;
   --tiny-font-size: 0.625rem; 
 }
 * {
@@ -341,14 +341,14 @@ gap: 24px;
 }
 #hola{
   color: #A842CF;
-  font-size: 24px;
+  font-size: var(--smaller-font-size);
   font-family: Kalam;
   line-height: 30px;
   letter-spacing: 0.48px;
 }
 .hola-text{
   color: #fff;
-  font-size: 24px;
+  font-size: var(--smaller-font-size);
   font-family: Kalam;
   line-height: 30px;
   letter-spacing: 0.48px;
@@ -362,7 +362,7 @@ gap: 24px;
 }
 .tools{
 color: #FFF;
-font-size: 24px;
+font-size: var(--smaller-font-size);
 font-family: Exo;
 font-weight: 600;
 line-height: 30px;
@@ -1009,11 +1009,31 @@ img {
     --h2-font-size: 28px;
     --h3-font-size: 22px;
     --small-font-size: 18px;
+    --smaller-font-size: 20px;
     --normal-font-size: 18px;
+  }
+  .about{
+    padding: 80px 0 40px;
+  }
+  .about-info{
+    width: 302px;
+  }
+  #about-education, #about-profile-1, #about-profile-2{
+    font-size: 16px;
   }
   #hdr-img{
     transform: scale(0.8);
     margin-left: -60px;
+  }
+  .tools{
+    gap: 20px;
+  }
+  #tools-img{
+    transform: scale(0.7);
+    margin-left: -70px;
+  }
+  #hdr2-img{
+    transform: scale(0.9);
   }
   .footertxt-layout{
     width: 300px;

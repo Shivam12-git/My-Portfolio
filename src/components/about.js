@@ -8,7 +8,7 @@ export const About = () => {
         <Row className="about-outerlayout">
             <Col>
                     <div>
-                    <img src={about_img} id="hdr-img" alt="about" />
+                    <img src={about_img} id="hdr2-img" alt="about" />
                     </div> 
             </Col>  
             <Col xs = {12} md = {6} xl = {7}>
